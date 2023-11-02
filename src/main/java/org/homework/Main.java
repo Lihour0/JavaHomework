@@ -1,13 +1,14 @@
 package org.homework;
 
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Homework1 test = new Homework1();
+        Scanner in = new Scanner(System.in);
 
-
-        for (int i = 1; i <= 5; i++) {
-
-            System.out.println("i = " + i);
-        }
+        test.input();
+        test.output();
     }
 }
