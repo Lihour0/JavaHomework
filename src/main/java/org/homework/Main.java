@@ -1,14 +1,21 @@
 package org.homework;
 
 
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-        Homework1 test = new Homework1();
-        Scanner in = new Scanner(System.in);
+    private final static int DEBUG = 2;
 
-        test.input();
-        test.output();
+    public static void main(String[] args) {
+
+        if (DEBUG == 1) {
+            Homework1 test = new Homework1();
+            test.input();
+            test.output();
+        }
+        if (DEBUG == 2) {
+            Homework2 test = new Homework2();
+
+            test.input();
+            test.print();
+        }
     }
 }
